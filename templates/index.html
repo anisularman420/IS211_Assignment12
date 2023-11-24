@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Web Application</title>
+</head>
+<body>
+    <h1>Welcome to Your Flask Web Application</h1>
+
+    <h2>Sections:</h2>
+    <ul>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('add_student') }}">Add Student</a></li>
+        <li><a href="{{ url_for('add_quiz') }}">Add Quiz</a></li>
+       <li><a href="{{ url_for('student_results', id=1) }}">Student Results</a></li>
+
+    </ul>
+</body>
+</html>
